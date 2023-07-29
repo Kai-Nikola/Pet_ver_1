@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animal Adoption</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/adopt.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html">
+        Pet Pals     
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <!-- Add data-toggle and data-target attributes to trigger the modal -->
+            <a class="nav-link" href="index.html" data-toggle="modal" data-target="#contactModal">Home</a>
+          </li>
+          <li class="nav-item">
+            <!-- Add data-toggle and data-target attributes to trigger the modal -->
+            <a class="nav-link" href="#" data-toggle="modal" data-target="#contactModal">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
+  
+  <!-- Add the following modal markup after the </header> tag -->
+<!-- Modal -->
+<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="contactModalLabel">Contact Us</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Contact information:</p>
+        <ul>
+          <li>Email: contact@petpals.com</li>
+          <li>Phone: +1 (555) 123-4567</li>
+          <!-- Add more contact information as needed -->
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <section id="animal-list" class="py-5">
+    <div class="container">
+      <div class="row">
+
+<!-- DOGS -->
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <img src="assets/image/Dogs/Dog (1).jpg" class="card-img-top" alt="Max">
+            <div class="card-body">
+              <h5 class="card-title">Max</h5>
+              <p class="card-text">Age: 3 years</p>
+              <p class="card-text">Breed: Labrador Retriever</p>
+              <a href="#" class="btn btn-primary">Adopt Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <img src="assets/image/Dogs/Dog (2).jpg" class="card-img-top" alt="Tommy">
+            <div class="card-body">
+              <h5 class="card-title">Tommy</h5>
+              <p class="card-text">Age: 1 years</p>
+              <p class="card-text">Breed: Beagle</p>
+              <a href="#" class="btn btn-primary">Adopt Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <img src="assets/image/Dogs/Dog (3).jpg" class="card-img-top" alt="Husk">
+            <div class="card-body">
+              <h5 class="card-title">Husk</h5>
+              <p class="card-text">Age: 4 years</p>
+              <p class="card-text">Breed: Husky</p>
+              <a href="#" class="btn btn-primary">Adopt Now</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2023 Animal Adoption. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
