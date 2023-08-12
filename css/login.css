@@ -2,11 +2,14 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
     background-image: url('https://i.imgur.com/iMLPnjw.mp4');
     background-repeat: no-repeat;
     background-size: cover;
     /* filter: blur(5px); */
+    background-color: #111111;
+    background-image: linear-gradient(45deg, #61e688, #f09c48, #e5e599, #678f3f, #77c977, #81e6b3, #5aeeee, #83b7eb, #8c8ce4, #c798f5, #f392f3, #e981b5, #c27e7e);
+    background-size: 300% 300%;
+    animation: rainbow 10s linear infinite;
   }
   
   .container {
@@ -93,3 +96,60 @@ body {
 .modal-content {
   padding: 20px;
 }
+
+
+.rainbow-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.login-container {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+}
+
+input {
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #0080ff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0059b3;
+}
+
+@keyframes rainbow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
